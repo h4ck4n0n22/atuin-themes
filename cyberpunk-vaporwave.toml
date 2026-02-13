@@ -1,0 +1,29 @@
+## ============================================================================
+## Cyberpunk Vaporwave Theme for Atuin
+## ============================================================================
+## A hot pink and cyan vaporwave-inspired variant
+##
+## Installation:
+## 1. Save this file to: ~/.config/atuin/themes/cyberpunk-vaporwave.toml
+## 2. Add to ~/.config/atuin/config.toml:
+##    [theme]
+##    name = "cyberpunk-vaporwave"
+## 3. Reload your shell
+## ============================================================================
+
+[theme]
+name = "cyberpunk-vaporwave"
+
+[colors]
+## Alerts
+AlertInfo = "@ansi_(51)"      # Cyan for info
+AlertWarn = "@ansi_(226)"     # Yellow for warnings
+AlertError = "@ansi_(196)"    # Red for errors
+
+## Text styles - pink and cyan aesthetic
+Annotation = "@ansi_(240)"    # Dark gray
+Base = "@ansi_(213)"          # Hot pink as default
+Guidance = "@ansi_(51)"       # Cyan for guidance
+Important = "@ansi_(226)"     # Yellow to stand out
+Title = "@ansi_(213)"         # Hot pink for titles
+Muted = "@ansi_(240)"         # Dark gray for contrast
