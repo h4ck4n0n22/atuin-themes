@@ -1,0 +1,29 @@
+## ============================================================================
+## Cyberpunk Matrix Theme for Atuin
+## ============================================================================
+## A green-focused Matrix-inspired variant
+##
+## Installation:
+## 1. Save this file to: ~/.config/atuin/themes/cyberpunk-matrix.toml
+## 2. Add to ~/.config/atuin/config.toml:
+##    [theme]
+##    name = "cyberpunk-matrix"
+## 3. Reload your shell
+## ============================================================================
+
+[theme]
+name = "cyberpunk-matrix"
+
+[colors]
+## Alerts
+AlertInfo = "@ansi_(46)"      # Bright green for info
+AlertWarn = "@ansi_(226)"     # Yellow for warnings
+AlertError = "@ansi_(196)"    # Red for errors
+
+## Text styles - everything green!
+Annotation = "@ansi_(240)"    # Dark gray
+Base = "@ansi_(46)"           # Bright green as default
+Guidance = "@ansi_(40)"       # Darker green for guidance
+Important = "@ansi_(226)"     # Yellow to stand out
+Title = "@ansi_(46)"          # Bright green for titles
+Muted = "@ansi_(240)"         # Dark gray for contrast
