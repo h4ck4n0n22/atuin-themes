@@ -1,0 +1,222 @@
+## ============================================================================
+## Atuin Configuration File - Cyberpunk Theme Edition
+## ============================================================================
+## This config includes all standard Atuin options with a cyberpunk color scheme
+## Uncomment and modify any options you want to change
+## Full documentation: https://docs.atuin.sh/configuration/config/
+## ============================================================================
+
+## ----------------------------------------------------------------------------
+## Database & Storage
+## ----------------------------------------------------------------------------
+## Where to store shell history
+# db_path = "~/.local/share/atuin/history.db"
+
+## Where to store session data
+# session_path = "~/.local/share/atuin/session"
+
+## Automatically import history from other shells on startup
+# auto_sync = true
+
+## ----------------------------------------------------------------------------
+## Sync Settings (Atuin Cloud Sync)
+## ----------------------------------------------------------------------------
+## Sync server address
+# sync_address = "https://api.atuin.sh"
+
+## How often to automatically sync (e.g. "5m", "1h", "10s")
+# sync_frequency = "5m"
+
+## ----------------------------------------------------------------------------
+## Search Behavior
+## ----------------------------------------------------------------------------
+## Search mode: prefix, fulltext, fuzzy, skim
+search_mode = "fuzzy"
+
+## Filter mode: global, host, session, directory, workspace
+filter_mode = "global"
+
+## Filter mode when using shell up key binding
+filter_mode_shell_up_key_binding = "session"
+
+## Workspace filter (for filter_mode = "workspace")
+# workspaces = false
+
+## Search for commands in a case-insensitive manner
+# search_case_insensitive = false
+
+## Parse the command to extract the base command
+# parse_commands = true
+
+## ----------------------------------------------------------------------------
+## UI & Display Settings
+## ----------------------------------------------------------------------------
+## UI style: auto, compact, full
+style = "compact"
+
+## Show preview of command
+show_preview = true
+
+## Show help text
+show_help = true
+
+## Maximum number of lines to show in preview
+# max_preview_height = 4
+
+## Show tabs for switching between different modes
+show_tabs = true
+
+## Exit mode: return-original, return-query
+exit_mode = "return-query"
+
+## Reverse the order of results (show newest first)
+# reverse = false
+
+## Height of the inline search interface
+inline_height = 20
+
+## Invert the UI (light mode) - set to false for dark cyberpunk theme
+invert = false
+
+## Show help row at the bottom
+# show_help = true
+
+## ----------------------------------------------------------------------------
+## History Recording
+## ----------------------------------------------------------------------------
+## Disable automatic recording of history (useful for sensitive environments)
+# disable_automatic_recording = false
+
+## Commands to ignore (never record these)
+# history_filter = []
+
+## Example: Don't record commands starting with a space or common clearscreen commands
+# history_filter = [
+#   "^\\s+",           # Commands starting with space
+#   "^clear$",         # clear command
+#   "^ls$",            # ls command
+#   "^cd$",            # cd with no args
+#   "^exit$",          # exit command
+# ]
+
+## Prevent commands run with a leading space from being recorded
+# ignore_leading_space = false
+
+## Prevent consecutive duplicate commands from being recorded
+# ignore_duplicate_commands = false
+
+## ----------------------------------------------------------------------------
+## Keyboard Shortcuts
+## ----------------------------------------------------------------------------
+## Change which commands are run when keys are pressed
+# [keys]
+# scroll_exits = true
+
+## ----------------------------------------------------------------------------
+## Statistics
+## ----------------------------------------------------------------------------
+## Common prefix length for statistics (how many path segments to group by)
+# common_prefix = ["sudo"]
+
+## Common subcommands (for statistics grouping)
+# common_subcommands = ["docker", "git", "kubectl", "cargo"]
+
+## ----------------------------------------------------------------------------
+## 🌃 CYBERPUNK COLOR SCHEME 🌃
+## ----------------------------------------------------------------------------
+## Neon-drenched colors matching the cyberpunk zsh theme
+## ANSI color codes (0-255): https://www.ditig.com/256-colors-cheat-sheet
+##
+## Cyberpunk palette:
+##   51  = Neon Cyan
+##   201 = Neon Magenta  
+##   46  = Neon Green
+##   226 = Neon Yellow
+##   213 = Neon Pink
+##   39  = Neon Blue
+##   240 = Dark Gray
+##   0   = Black
+##   255 = White
+## ----------------------------------------------------------------------------
+
+[style]
+## Search bar / input field
+foreground = "51"              # Neon cyan input text
+background = "0"               # Black background
+border = "201"                 # Neon magenta border
+
+## Results list
+results_foreground = "255"     # White for readability
+results_background = "0"       # Black
+selected_foreground = "0"      # Black text on selected
+selected_background = "46"     # Neon green highlight
+
+## Matched text in search results
+matched_foreground = "226"     # Neon yellow for matches
+matched_background = "0"
+
+## Help text at bottom
+help_foreground = "240"        # Dark gray
+help_background = "0"
+
+## Preview pane
+preview_foreground = "213"     # Neon pink
+preview_background = "0"
+
+## Status line
+status_foreground = "39"       # Neon blue
+status_background = "0"
+
+## UI elements
+separator = "201"              # Neon magenta separators
+scrollbar = "51"               # Neon cyan scrollbar
+
+## ----------------------------------------------------------------------------
+## Alternative Color Schemes (commented out)
+## ----------------------------------------------------------------------------
+## Uncomment one of these sections to try different cyberpunk variations
+
+## Variant 1: More Blue/Purple
+# [style]
+# foreground = "39"              # Neon blue
+# border = "213"                 # Neon pink
+# selected_background = "201"    # Neon magenta
+# matched_foreground = "51"      # Neon cyan
+
+## Variant 2: Green Matrix Style  
+# [style]
+# foreground = "46"              # Neon green
+# border = "46"                  # Neon green
+# selected_background = "46"     # Neon green
+# matched_foreground = "226"     # Neon yellow
+
+## Variant 3: Hot Pink/Cyan (Vaporwave)
+# [style]
+# foreground = "213"             # Neon pink
+# border = "51"                  # Neon cyan
+# selected_background = "213"    # Neon pink
+# matched_foreground = "226"     # Neon yellow
+
+## ----------------------------------------------------------------------------
+## Daemon (Background Sync Service)
+## ----------------------------------------------------------------------------
+## Enable the daemon for background syncing
+# daemon = false
+
+## ----------------------------------------------------------------------------
+## Shell Integration
+## ----------------------------------------------------------------------------
+## Enter key behavior: accept, execute-or-insert, execute, insert
+# enter_accept = true
+
+## ----------------------------------------------------------------------------
+## Network & Update Settings
+## ----------------------------------------------------------------------------
+## Check for Atuin updates
+# update_check = true
+
+## Network timeout for sync operations
+# network_timeout = 30
+
+## Network connection timeout
+# network_connect_timeout = 5
